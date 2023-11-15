@@ -24,18 +24,6 @@ public class ScoreBoard : MonoBehaviour
         Instance = this;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void CheckWin()
     {
         if (p1Score >= winScore)
