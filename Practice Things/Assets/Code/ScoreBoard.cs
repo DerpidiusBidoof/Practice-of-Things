@@ -29,17 +29,18 @@ public class ScoreBoard : MonoBehaviour
         if (p1Score >= winScore)
         {
             winMessageText.text = "PLAYER 1 ACHIEVES " + winMessage;
+            Restart.Instance.GameOver();
         }
         else if (p2Score >= winScore)
         {
             winMessageText.text = "PLAYER 2 ACHIEVES " + winMessage;
+            Restart.Instance.GameOver();
         }
         else
         {
             BallSpawner.Instance.SpawnBall();
         }
     }
-
     public void GivePointToP1()
     {
         p1Score++; //++ means add 1
